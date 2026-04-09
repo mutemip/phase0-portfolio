@@ -1,160 +1,467 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Paul Mutemi| Portforlio</title>
+    <meta charset="UTF-8">
+    <title>Paul Mutemi | Cloud & Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paul Mutemi — Cloud Engineer & Software Engineer building high-throughput APIs, cloud-native microservices, and AI-powered systems.">
 
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="default.css">
-	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
 
-	<section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-				<h1>Hi, I'm Paul Mutemi</h1>
-			</div>
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>PM<span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="Paul Mutemi Resume.pdf" download class="nav-cta">Resume <i class="fas fa-download"></i></a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-tag">// Hello, World!</p>
+                <h1 class="hero-name glitch" data-text="Paul Mutemi">Paul Mutemi</h1>
+                <div class="hero-title">
+                    <span class="title-accent">&gt;</span>
+                    <span>Cloud Engineer &amp; Software Engineer</span>
+                    <span class="cursor">_</span>
+                </div>
+                <p class="hero-summary">Building high-throughput APIs, cloud-native microservices, and AI-powered applications that scale to millions of daily requests.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/mutemip" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/paul-mutemi/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:laupmutemi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-glow"></div>
+                    <img src="images/pmutemi.jpg" alt="Paul Mutemi">
+                    <div class="image-corner tl"></div>
+                    <div class="image-corner tr"></div>
+                    <div class="image-corner bl"></div>
+                    <div class="image-corner br"></div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">532K+</span>
+                        <span class="stat-label">App Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5M+</span>
+                        <span class="stat-label">Daily Requests</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">01.</span>
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Dynamic Software Engineer with expertise in <span class="highlight">backend</span> and <span class="highlight">cloud engineering</span>. Proven ability to deliver scalable software solutions and optimize system performance.</p>
+                    <p>Experienced in building high-throughput production applications serving <span class="highlight">millions of daily requests</span>. Excels in agile environments, contributing to project success through effective communication and teamwork.</p>
+                    <p>Pursuing a <span class="highlight">Master of Science in Information Technology</span> at Carnegie Mellon University Africa, with a B.Sc. in Computer Science from Karatina University.</p>
+                    <div class="cert-list">
+                        <div class="cert-item"><i class="fas fa-certificate"></i> Cloud Developer — Udacity</div>
+                        <div class="cert-item"><i class="fas fa-certificate"></i> Cyber Security Analyst — CyberShujaa Bootcamp</div>
+                        <div class="cert-item"><i class="fas fa-certificate"></i> Meta Backend Professional Certificate — Coursera</div>
+                    </div>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span class="terminal-title">paul@portfolio:~$</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="t-prompt">$</span> whoami</p>
+                        <p class="t-output">paul_mutemi</p>
+                        <br>
+                        <p><span class="t-prompt">$</span> cat profile.json</p>
+                        <p class="t-output">{</p>
+                        <p class="t-output">&nbsp;&nbsp;"role": "Cloud &amp; Software Engineer",</p>
+                        <p class="t-output">&nbsp;&nbsp;"location": "Nairobi, Kenya",</p>
+                        <p class="t-output">&nbsp;&nbsp;"focus": ["APIs", "Microservices", "AI/LLM"],</p>
+                        <p class="t-output">&nbsp;&nbsp;"cloud": ["AWS", "GCP", "Azure"],</p>
+                        <p class="t-output">&nbsp;&nbsp;"available": <span class="t-green">true</span></p>
+                        <p class="t-output">}</p>
+                        <br>
+                        <p><span class="t-prompt">$</span> <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<a href="index.html">
-						<div class="dots-wrapper">
-							<div id="dot-1" class="browser-dot"></div>
-							<div id="dot-2" class="browser-dot"></div>
-							<div id="dot-3" class="browser-dot"></div>
-						</div>
-					</a>
-					
-					<ul id="navigation">
-						<li><a href="index.html#about">About</a></li>
-						<li><a href="index.html#contact">Contact</a></li>
-					</ul>
-				
-					
-				</div>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">02.</span>
+                <h2>Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-server"></i>
+                        <h4>Backend</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Python</span><span>Django</span><span>Django REST</span>
+                        <span>FastAPI</span><span>Flask</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-cloud"></i>
+                        <h4>Cloud &amp; DevOps</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span>AWS</span><span>Azure</span><span>GCP</span>
+                        <span>Docker</span><span>Kubernetes</span>
+                        <span>Terraform</span><span>GitLab CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-brain"></i>
+                        <h4>AI / LLM</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span>OpenAI</span><span>Claude</span><span>Gemini</span>
+                        <span>RAG Pipelines</span><span>Agentic AI</span>
+                        <span>LangChain</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-database"></i>
+                        <h4>Databases</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span><span>MySQL</span>
+                        <span>MongoDB</span><span>Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-code"></i>
+                        <h4>Frontend</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span>React</span><span>Next.js</span>
+                        <span>HTML/CSS</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-tools"></i>
+                        <h4>Tools &amp; Messaging</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Git</span><span>RabbitMQ</span><span>Celery</span>
+                        <span>Kafka</span><span>Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="left-column">
-					<img id="profile_pic" src="images/pmutemi.jpg">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">03.</span>
+                <h2>Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Backend Software Engineer</h3>
+                            <span class="timeline-company">New Age <span class="remote-tag">Remote</span></span>
+                            <span class="timeline-date">June 2024 — Present</span>
+                        </div>
+                        <ul>
+                            <li>Leads team designing high-throughput APIs within a distributed microservices architecture serving <span class="highlight">millions of daily requests</span>.</li>
+                            <li>Builds and deploys cloud-native, fault-tolerant microservices within budget constraints on GCP, AWS, and Azure.</li>
+                            <li>Develops scalable APIs for RAG systems integrating vector embedding models for large-scale knowledge base querying.</li>
+                            <li>Deploys and monitors cloud applications using VMs and Containers across multiple cloud providers.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Python</span><span>Django</span><span>RAG</span><span>Microservices</span><span>Cloud</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
 
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <span class="timeline-company">PawaIT Solutions Ltd — Nairobi, Kenya</span>
+                            <span class="timeline-date">Feb 2024 — May 2024</span>
+                        </div>
+                        <ul>
+                            <li>Built automated audio data pipeline with Whisper model, streamlining AI transcription workflow by <span class="highlight">45%</span>.</li>
+                            <li>Designed AI customer insight platform integrating OpenAI Whisper and LangChain for automated audio transcription and sentiment analysis.</li>
+                            <li>Built distributed task queue (Celery + RabbitMQ) with Redis cache, cutting processing latency by <span class="highlight">40%</span> handling thousands of concurrent tasks per minute.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Python</span><span>Celery</span><span>RabbitMQ</span><span>Redis</span><span>OpenAI</span><span>LangChain</span>
+                        </div>
+                    </div>
+                </div>
 
-					<p id="settings-note">* Select Theme settings</p>
-				</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>IT Support Specialist</h3>
+                            <span class="timeline-company">USIU Africa — Nairobi, Kenya</span>
+                            <span class="timeline-date">April 2023 — Feb 2024</span>
+                        </div>
+                        <ul>
+                            <li>Led cross-functional team initiatives achieving <span class="highlight">25% improvement</span> in overall systems efficiency.</li>
+                            <li>Created automated reporting scripts consolidating system metrics, reducing report generation time by <span class="highlight">60%</span>.</li>
+                            <li>Configured Active Directory user management enforcing least-privilege on critical infrastructure.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Active Directory</span><span>Automation</span><span>Linux</span><span>Systems Admin</span>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="right-column">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Lead Python Instructor</h3>
+                            <span class="timeline-company">Power Learn Project — Nairobi, Kenya</span>
+                            <span class="timeline-date">May 2022 — April 2023</span>
+                        </div>
+                        <ul>
+                            <li>Led pan-African mentorship across <span class="highlight">5 countries</span>, elevating program graduation rates by 20%.</li>
+                            <li>Organized quarterly hackathons engaging <span class="highlight">500+ participants</span>, accelerating practical skill development.</li>
+                            <li>Designed a full-stack software engineering curriculum covering version control, agile methodologies, and real-world projects.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Python</span><span>Teaching</span><span>Curriculum Design</span><span>Mentorship</span>
+                        </div>
+                    </div>
+                </div>
 
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
-							<p>Am a Software Developer and a Junior CyberSecurity Analyst. Reach out for Vulnerability assessments for your system.</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="timeline-item volunteer">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Open-Source Community Mentor</h3>
+                            <span class="timeline-company">Black Python Devs — Florida, USA <span class="remote-tag">Volunteer</span></span>
+                            <span class="timeline-date">July 2024 — Nov 2024</span>
+                        </div>
+                        <ul>
+                            <li>Led mentorship for <span class="highlight">10+ developers</span>, establishing structured learning paths for open source contribution.</li>
+                            <li>Workshops on Git fundamentals and PR workflows resulted in <span class="highlight">100+ successful first-time contributions</span> with an 80% merge rate.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Git</span><span>Open Source</span><span>Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="s2">
-		<div class="main-container">
-			
-			<div class="about-wrapper">
-				<div class="about-me">
-					<a  name="about"></a>
-					<h4>More about me</h4>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">04.</span>
+                <h2>Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
 
-					<p>I develop systems and learn new technologies to keep myself relevant to job market</p>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-spell-check"></i></div>
+                        <span class="app-store-badge"><i class="fab fa-app-store-ios"></i> App Store</span>
+                    </div>
+                    <h3>Grammar AI Checker &amp; Corrector</h3>
+                    <span class="project-meta">iOS Application · 532,000+ Users</span>
+                    <p>A productivity app elevating English grammar — sentence corrector, plagiarism checker, spell check, document editor, and punctuation checker. Backend integrates OpenAI, Claude, and Gemini models for intelligent text and document processing.</p>
+                    <div class="project-highlights">
+                        <span><i class="fas fa-users"></i> 532K+ Users</span>
+                        <span><i class="fas fa-cloud"></i> GCP + Azure</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span><span>Django REST</span><span>GCP</span><span>Azure</span>
+                        <span>PostgreSQL</span><span>OpenAI</span><span>Claude</span><span>Celery</span><span>Redis</span><span>RabbitMQ</span>
+                    </div>
+                </div>
 
-					<p>I am currently enrolled learning in Moringa School to learn: <b>Ruby & React</b></p>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <span class="app-store-badge"><i class="fab fa-app-store-ios"></i> App Store</span>
+                    </div>
+                    <h3>Currency Converter</h3>
+                    <span class="project-meta">iOS Application · Live Exchange Rates</span>
+                    <p>Live exchange rate calculator with offline mode for travelers. Built an OCR pipeline using Azure Computer Vision for image-based currency recognition and integrated real-time currency APIs for accurate conversions worldwide.</p>
+                    <div class="project-highlights">
+                        <span><i class="fas fa-eye"></i> Azure CV OCR</span>
+                        <span><i class="fas fa-wifi"></i> Online &amp; Offline</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span><span>Django REST</span><span>GCP</span><span>Azure</span>
+                        <span>OpenCV</span><span>Computer Vision</span><span>Celery</span><span>Redis</span><span>RabbitMQ</span>
+                    </div>
+                </div>
 
-					<p>I Am also a CyberSecurity Analyst Trainee at <b>CyberShujaa - </b> Awesome Learning Experience and Inevitable growth</p>
-					<hr>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <a href="https://github.com/mutemip" target="_blank" rel="noopener" class="project-gh-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>Obi Avatar</h3>
+                    <span class="project-meta">Local-First Desktop AI Assistant</span>
+                    <p>Desktop AI assistant (PyQt5) that answers from a PDF knowledge base via RAG (ChromaDB + local embeddings), Ollama for LLM inference, Whisper for speech-to-text, neural TTS, and Wav2Lip for lip-synced avatar — fully on-device, zero API keys.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>PyQt5</span><span>RAG</span><span>ChromaDB</span>
+                        <span>Ollama</span><span>Whisper</span><span>Wav2Lip</span><span>OpenCV</span><span>FFmpeg</span>
+                    </div>
+                </div>
 
-					<h4>TOP EXPERTISE</h4>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-file-signature"></i></div>
+                        <span class="status-badge ongoing">Ongoing</span>
+                    </div>
+                    <h3>MyPowerly</h3>
+                    <span class="project-meta">E-Signature &amp; Tax Returns Platform · US Market</span>
+                    <p>Complete e-signature workflow and sales tax returns application for US residents. Handles individual, S-Corp, C-Corp, partnerships, and fiduciary returns across multiple states with Google Drive and Microsoft 365 integration.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>FastAPI</span><span>Celery</span><span>Redis</span>
+                        <span>RabbitMQ</span><span>AWS</span><span>PostgreSQL</span>
+                    </div>
+                </div>
 
-					<p>Fullstack developer with primary focus on Django + Slight React skills: <a target="_blank" href="Paul Mutemi CV.pdf">Download Resume</a></p>
+            </div>
+        </div>
+    </section>
 
-					<div id="skills">
-						<ul>
-							<li>Python</li>
-							<li>Django</li>
-							<li>JavaScript</li>
-							<li>React</li>
-							<li>Postgres</li>
-							<li>Nmap, Metasploit, OpenVas</li>
-							<li>Vulnerability Assessment</li>
-						</ul>
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">05.</span>
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Open to <span class="highlight">Backend</span> and <span class="highlight">Cloud Engineering</span> roles. Whether you have a project, an opportunity, or just want to connect — my inbox is always open.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:laupmutemi@gmail.com">laupmutemi@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254 718 769 551</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/mutemip" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/paul-mutemi/" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
 
-						<ul>
-							<li>Google Maps API</li>
-							<li>Git & Github</li>
-							<li>GCP, AWS, Azure</li>
-							<li>Heroku</li>
-							<li>HTML/CSS</li>
-							<li>Linux</li>
-						</ul>
+                <!-- Replace YOUR_FORM_ID below with your Formspree form ID after signing up at formspree.io -->
+                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project / Opportunity / Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about the project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
 
-					</div>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <p>Designed &amp; Built by <span class="highlight">Paul Mutemi</span></p>
+            <p class="footer-sub">Cloud Engineer &amp; Software Engineer · Nairobi, Kenya</p>
+        </div>
+    </footer>
 
-				</div>
-
-				
-				<div class="social-links">
-					<img id="social_img" src="images/desktop wallpaper.jpg">
-					<h3>Find me on Twitter & LinkedIn</h3>
-					<div class="inline-block">
-						<a target="_blank" class="fa fa-linkedin-square", href="https://www.linkedin.com/in/paul-mutemi-79506718b/">LinkedIn</a> |
-						<a target="_blank" class="fa fa-twitter" href="https://twitter.com/paulmutemi16">Twitter</a>
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-			<a href=""></a>
-			<h3 style="text-align: center;">Get In Touch</h3>
-
-			<form id="contact-form">
-				<a name="contact"></a>
-
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-		</div>
-	</section> 
-
-	<script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

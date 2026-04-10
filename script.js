@@ -68,19 +68,21 @@ if (contactForm) {
                 headers: { 'Accept': 'application/json' }
             });
 
+            const data = await response.json().catch(() => ({}));
+
             if (response.ok) {
                 formStatus.textContent = '✓ Message sent. I\'ll get back to you shortly.';
                 formStatus.style.color = '#00ff41';
                 contactForm.reset();
             } else {
-                const data = await response.json();
-                if (data.errors) {
-                    throw new Error(data.errors.map(err => err.message).join(', '));
-                }
-                throw new Error('Submission failed');
+                const reason = data.errors
+                    ? data.errors.map(e => e.message).join(', ')
+                    : (data.error || `Error ${response.status}`);
+                formStatus.textContent = `✗ ${reason}`;
+                formStatus.style.color = '#ff00aa';
             }
         } catch (err) {
-            formStatus.textContent = '✗ Could not send. Email me directly: laupmutemi@gmail.com';
+            formStatus.textContent = '✗ Network error — email me directly: pmutemi@andrew.cmu.edu';
             formStatus.style.color = '#ff00aa';
         } finally {
             submitBtn.innerHTML = origHtml;
